@@ -1,0 +1,1132 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "source": "Cyberpunk Wiki (Fandom) — cyberpunk.fandom.com/wiki/Cyberpunk_2077_Shards",
+    "description": "Curated dataset of Cyberpunk 2077 shards, extracted from wiki category pages. Entity extraction performed manually from shard titles and known lore.",
+    "categories": ["Cyberpsycho", "World", "Technology", "Literature", "Articles", "Encrypted", "Progression", "People"],
+    "entity_types": ["Individual", "Corporation", "Gang", "Institution", "AI", "Faction"],
+    "total_shards": 112
+  },
+  "shards": [
+    {
+      "id": "shard_001",
+      "title": "Archived Conversation: Brick and Ellis",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": "Northside", "linked_gig": "Cyberpsycho Sighting: Where the Bodies Hit the Floor" },
+      "entities_mentioned": ["Brick", "Ellis Carter", "Royce", "Maelstrom"],
+      "summary": "Ellis warns Brick about Royce plotting to seize leadership of Maelstrom. Brick urges Ellis to flee."
+    },
+    {
+      "id": "shard_002",
+      "title": "Archived Conversation: Bobby and Frank",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": "Kabuki", "linked_gig": "Cyberpsycho Sighting: Phantom of Night City" },
+      "entities_mentioned": ["Bobby", "Frank", "Maelstrom"],
+      "summary": "Frank notices Bobby's increasing cyberpsychosis symptoms. Bobby denies it."
+    },
+    {
+      "id": "shard_003",
+      "title": "Archived Conversation: Cedric Muller and Maciej Nakonieczny",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "Japantown", "linked_gig": "Cyberpsycho Sighting: Smoke on the Water" },
+      "entities_mentioned": ["Cedric Muller", "Maciej Nakonieczny", "Arasaka"],
+      "summary": "Two Arasaka ex-employees discuss being discarded by the corporation and their descent."
+    },
+    {
+      "id": "shard_004",
+      "title": "Archived Conversation: Dr. Martin Sypura and Lt. Mower",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Santo Domingo", "subzone": "Arroyo", "linked_gig": "Cyberpsycho Sighting: On Deaf Ears" },
+      "entities_mentioned": ["Dr. Martin Sypura", "Lt. Mower", "NCPD", "MaxTac"],
+      "summary": "A police lieutenant tries to get psychiatric clearance from a doctor for a soldier showing psychosis signs."
+    },
+    {
+      "id": "shard_005",
+      "title": "Archived Conversation: Fred Reid and Mor Jones",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": "Vista del Rey", "linked_gig": "Cyberpsycho Sighting: Where the Bodies Hit the Floor" },
+      "entities_mentioned": ["Fred Reid", "Mor Jones"],
+      "summary": "Fred confesses to Mor his growing numbness and disconnection from his own body."
+    },
+    {
+      "id": "shard_006",
+      "title": "Archived Conversation: Hideyoshi Ueno and Ken Masuda",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "City Center", "subzone": "Downtown", "linked_gig": "Cyberpsycho Sighting: Ticket to the Major Leagues" },
+      "entities_mentioned": ["Hideyoshi Ueno", "Ken Masuda", "Arasaka"],
+      "summary": "A rising Arasaka executive pressures a colleague while showing signs of dehumanization."
+    },
+    {
+      "id": "shard_007",
+      "title": "Archived Conversation: Hoof and Sanders",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": "Northside", "linked_gig": "Cyberpsycho Sighting: Where the Bodies Hit the Floor" },
+      "entities_mentioned": ["Hoof", "Sanders"],
+      "summary": "Two former soldiers discuss the toll of combat cyberware on their mental state."
+    },
+    {
+      "id": "shard_008",
+      "title": "Archived Conversation: John and Deng",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": "West Wind Estate", "linked_gig": "Cyberpsycho Sighting: House on a Hill" },
+      "entities_mentioned": ["John", "Deng", "Voodoo Boys"],
+      "summary": "Deng is worried about John's increasingly erratic behaviour after heavy cyberware modifications."
+    },
+    {
+      "id": "shard_009",
+      "title": "Archived Conversation: Julia Lee and Norio Akuhara",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "Charter Hill", "linked_gig": "Cyberpsycho Sighting: Lt. Mower" },
+      "entities_mentioned": ["Julia Lee", "Norio Akuhara", "Militech"],
+      "summary": "A Militech-contracted therapist attempts to assess Norio's psychological state post-augmentation."
+    },
+    {
+      "id": "shard_010",
+      "title": "Archived Conversation: Ken Masuda and Diego Ramirez",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "City Center", "subzone": "Corpo Plaza", "linked_gig": "Cyberpsycho Sighting: Ticket to the Major Leagues" },
+      "entities_mentioned": ["Ken Masuda", "Diego Ramirez", "Arasaka"],
+      "summary": "Ken Masuda pressures Diego about performance metrics, showing signs of extreme corp-induced psychosis."
+    },
+    {
+      "id": "shard_011",
+      "title": "Archived Conversation: Maciej Nakonieczny and Peter Novotny",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "Japantown", "linked_gig": "Cyberpsycho Sighting: Smoke on the Water" },
+      "entities_mentioned": ["Maciej Nakonieczny", "Peter Novotny", "Arasaka"],
+      "summary": "Peter tries to convince Maciej to seek help, noting his mental deterioration."
+    },
+    {
+      "id": "shard_012",
+      "title": "\"Saigon Sisters\" - TREATMENT",
+      "category": "Cyberpsycho",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": "Coastview", "linked_gig": "Cyberpsycho Sighting: Phantom of Night City" },
+      "entities_mentioned": ["Saigon Sisters"],
+      "summary": "A medical treatment file for a pair of cyberpsychos who operated as a duo."
+    },
+    {
+      "id": "shard_013",
+      "title": "Archived Conversation: Lamarr and Dr. Koch",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": "Wellsprings", "linked_gig": "Cyberpsycho Sighting: The Wasteland" },
+      "entities_mentioned": ["Lamarr", "Dr. Koch"],
+      "summary": "Dr. Koch is documenting Lamarr's accelerating dissociation from reality."
+    },
+    {
+      "id": "shard_014",
+      "title": "Archived Conversation: Lucas McClintock and Jimmy Fallen",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Santo Domingo", "subzone": "Rancho Coronado", "linked_gig": "Cyberpsycho Sighting: Second Chances" },
+      "entities_mentioned": ["Lucas McClintock", "Jimmy Fallen"],
+      "summary": "Jimmy confesses to Lucas his addiction to combat stims and fear of losing control."
+    },
+    {
+      "id": "shard_015",
+      "title": "Archived Conversation: Nasim Perlman and Tucker Albach",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": "Rocky Ridge", "linked_gig": "Cyberpsycho Sighting: Target of Opportunity" },
+      "entities_mentioned": ["Nasim Perlman", "Tucker Albach", "Militech"],
+      "summary": "Nasim and Tucker, two Militech operators, debate whether Tucker's behaviour is still within norms."
+    },
+    {
+      "id": "shard_016",
+      "title": "Archived Conversation: Nathan Goodwin and Boris Skorsky",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": "Little China", "linked_gig": "Cyberpsycho Sighting: Bloody Ritual" },
+      "entities_mentioned": ["Nathan Goodwin", "Boris Skorsky"],
+      "summary": "Boris is deeply troubled by Nathan's new philosophy that flesh is an obstacle to transcendence."
+    },
+    {
+      "id": "shard_017",
+      "title": "Archived Conversation: Pvt. Jacquelyn Dennis and Senior NCO Cat Menendez",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Santo Domingo", "subzone": "Arroyo", "linked_gig": "Cyberpsycho Sighting: On Deaf Ears" },
+      "entities_mentioned": ["Pvt. Jacquelyn Dennis", "Cat Menendez", "NorCal Armed Forces"],
+      "summary": "A superior officer files a report on a soldier showing psychosis symptoms after combat implant surgery."
+    },
+    {
+      "id": "shard_018",
+      "title": "Archived Conversation: Richard Ribisi and Pamela Ling",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "City Center", "subzone": "Downtown", "linked_gig": "Cyberpsycho Sighting: Psychofan" },
+      "entities_mentioned": ["Richard Ribisi", "Pamela Ling"],
+      "summary": "A fan's obsession with a pop star tips into dangerous territory in this chilling exchange."
+    },
+    {
+      "id": "shard_019",
+      "title": "Archived Conversation: Sgt. Vincent Montez and Capt. Tomas Schonfeld",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": "Sunset Ridge", "linked_gig": "Cyberpsycho Sighting: Farewell" },
+      "entities_mentioned": ["Sgt. Vincent Montez", "Capt. Tomas Schonfeld", "NUSA Military"],
+      "summary": "A captain files an urgent report on a sergeant who has gone AWOL after a combat stress breakdown."
+    },
+    {
+      "id": "shard_020",
+      "title": "Archived Conversation: V. Trachev and Charles Bucks",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "North Oak", "linked_gig": "Cyberpsycho Sighting: Demons of War" },
+      "entities_mentioned": ["V. Trachev", "Charles Bucks"],
+      "summary": "Charles tries to convince Trachev to step away from his extreme body modification binge."
+    },
+    {
+      "id": "shard_021",
+      "title": "Archived Conversation: Raheel Frayre and Julio Kingi",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": "The Glen", "linked_gig": "Cyberpsycho Sighting: The Wasteland" },
+      "entities_mentioned": ["Raheel Frayre", "Julio Kingi", "6th Street"],
+      "summary": "Julio tries to reach out to Raheel who has been isolated and increasingly violent since leaving the gang."
+    },
+    {
+      "id": "shard_022",
+      "title": "Archived Conversation: Raudha Awang and Craig Giorgio",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": "Coastview", "linked_gig": null },
+      "entities_mentioned": ["Raudha Awang", "Craig Giorgio"],
+      "summary": "Craig is alarmed by Raudha's talk of feeling like a ghost in her own body after recent netrunner mods."
+    },
+    {
+      "id": "shard_023",
+      "title": "Archived Conversation: Dr. Jack Allen and Dr. Tim Boone",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "City Center", "subzone": "Corpo Plaza", "linked_gig": null },
+      "entities_mentioned": ["Dr. Jack Allen", "Dr. Tim Boone", "Biotechnica"],
+      "summary": "Two doctors debate the ethics of prescribing combat cyberware knowing the psychosis risk."
+    },
+    {
+      "id": "shard_024",
+      "title": "Archived Conversation: Dr. Joanne Koch and Dr. Fiona Vargas",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "Charter Hill", "linked_gig": null },
+      "entities_mentioned": ["Dr. Joanne Koch", "Dr. Fiona Vargas", "Trauma Team"],
+      "summary": "Two trauma team doctors share clinical notes on a patient exhibiting advanced cyberpsychosis."
+    },
+    {
+      "id": "shard_025",
+      "title": "Archived Conversation: Jorge Ron and Magdaline Juszczyk",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": "Wellsprings", "linked_gig": null },
+      "entities_mentioned": ["Jorge Ron", "Magdaline Juszczyk"],
+      "summary": "Magdaline pleads with Jorge to report his partner's erratic behavior before someone gets hurt."
+    },
+    {
+      "id": "shard_026",
+      "title": "Archived Conversation: Jordan M. and Dustin",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Jordan M.", "Dustin"],
+      "summary": "Two nomads discuss the psychological toll of living on the fringe with heavy combat chrome."
+    },
+    {
+      "id": "shard_027",
+      "title": "Archived Conversation: Larissa Almeida and Joe Peck",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Santo Domingo", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Larissa Almeida", "Joe Peck"],
+      "summary": "Joe is at a breaking point, and Larissa realises too late that her warnings went unheard."
+    },
+    {
+      "id": "shard_028",
+      "title": "Archived Conversation: Larry Carel and Eve Baranski",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Larry Carel", "Eve Baranski"],
+      "summary": "Eve documents Larry's growing hostility and requests emergency psychiatric intervention."
+    },
+    {
+      "id": "shard_029",
+      "title": "Archived Conversation: Laszlo Nagy and Elena \"Pumpkin\" Esposito",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Laszlo Nagy", "Elena Esposito"],
+      "summary": "Elena tries to help Laszlo whose grip on reality is slipping after a botched ripperdoc job."
+    },
+    {
+      "id": "shard_030",
+      "title": "Archived Conversation: Laura Decker and Martin McGrath",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Laura Decker", "Martin McGrath"],
+      "summary": "Laura tells Martin she is done with their relationship as he no longer feels human to her."
+    },
+    {
+      "id": "shard_031",
+      "title": "Archived Conversation: Lauren Murphy and Artem Melnyk",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Lauren Murphy", "Artem Melnyk"],
+      "summary": "Artem desperately asks Lauren for help after his combat subroutines start triggering without command."
+    },
+    {
+      "id": "shard_032",
+      "title": "Archived Conversation: Lt. Suzume Hata and Haru Asai",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "City Center", "subzone": "Corpo Plaza", "linked_gig": null },
+      "entities_mentioned": ["Lt. Suzume Hata", "Haru Asai", "Arasaka"],
+      "summary": "An Arasaka lieutenant reports to internal security about a soldier who is becoming a liability."
+    },
+    {
+      "id": "shard_033",
+      "title": "Archived Conversation: M. Araki and Satoko Ito",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": "Japantown", "linked_gig": null },
+      "entities_mentioned": ["M. Araki", "Satoko Ito", "Arasaka"],
+      "summary": "Satoko urges Araki to seek help before Arasaka notices and terminates his contract."
+    },
+    {
+      "id": "shard_034",
+      "title": "Archived Conversation: Nadezhda Tiurina and Dr.",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Nadezhda Tiurina"],
+      "summary": "A clinical session where Nadezhda denies symptoms while the doctor's notes indicate otherwise."
+    },
+    {
+      "id": "shard_035",
+      "title": "Archived Conversation: Nasim Perlman and Aldo Schroder",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Nasim Perlman", "Aldo Schroder", "Militech"],
+      "summary": "Aldo warns Nasim that the latest batch of military chrome has unacceptable side effects."
+    },
+    {
+      "id": "shard_036",
+      "title": "Archived Conversation: Natalie Brooks and Matt Maksymowiz",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Santo Domingo", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Natalie Brooks", "Matt Maksymowiz"],
+      "summary": "Natalie notices Matt has stopped responding to her messages and reaches out in growing panic."
+    },
+    {
+      "id": "shard_037",
+      "title": "Archived Conversation: Nathan Jacobs and Grace Jacobs",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Nathan Jacobs", "Grace Jacobs"],
+      "summary": "Grace, Nathan's sister, begs him to come home and stop the modifications before it is too late."
+    },
+    {
+      "id": "shard_038",
+      "title": "Archived Conversation: Rex Ridgway and Arpana Bora",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Rex Ridgway", "Arpana Bora"],
+      "summary": "Rex tells Arpana about the voice in his head that feels more real than his own conscience."
+    },
+    {
+      "id": "shard_039",
+      "title": "Archived Conversation: Reginald Keyes and J.T. Codd",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Reginald Keyes", "J.T. Codd"],
+      "summary": "Two low-level fixers discuss the rising number of chrome-crazed mercs ruining the market."
+    },
+    {
+      "id": "shard_040",
+      "title": "The MaxTac Way, by Mathias Maddox",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Mathias Maddox", "MaxTac", "NCPD"],
+      "summary": "A first-person account of life in MaxTac, Night City's elite cyberpsycho response unit."
+    },
+    {
+      "id": "shard_041",
+      "title": "America After the War",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["NUSA", "Militech", "Arasaka"],
+      "summary": "A historical overview of America's geopolitical state after the Fourth Corporate War."
+    },
+    {
+      "id": "shard_042",
+      "title": "Arasaka Academy: Best of the Best, or Best for the Best?",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Arasaka Academy", "Yorinobu Arasaka"],
+      "summary": "A critical look at Arasaka's elite training academy and the question of meritocracy vs nepotism."
+    },
+    {
+      "id": "shard_043",
+      "title": "Big 5 Employers in Night City – 2077",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Militech", "Biotechnica", "Petrochem", "Night Corp"],
+      "summary": "A business magazine rundown of the five dominant corporations employing Night City residents."
+    },
+    {
+      "id": "shard_044",
+      "title": "Excerpts from \"A History of the Nomads\" by B.B. Pires",
+      "category": "World",
+      "format": "Literature",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["B.B. Pires", "Aldecaldos", "Nomads"],
+      "summary": "Scholarly excerpts examining nomad clan culture, history, and their rejection of corporate society."
+    },
+    {
+      "id": "shard_045",
+      "title": "In the Shadows of Megabuildings",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Night Corp", "NCPD", "Night City Council"],
+      "summary": "A journalistic piece on the living conditions of megabuilding residents and corporate neglect."
+    },
+    {
+      "id": "shard_046",
+      "title": "Inside MetaCorp",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["MetaCorp", "Arasaka", "Militech"],
+      "summary": "Investigative piece on MetaCorp, a lesser-known subsidiary operating in the shadows of the Big Five."
+    },
+    {
+      "id": "shard_047",
+      "title": "Lat-Am Wars",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech", "Petrochem", "Aldecaldos", "NUSA"],
+      "summary": "A retrospective on the corporate-funded conflicts in Latin America that shaped the modern world."
+    },
+    {
+      "id": "shard_048",
+      "title": "Contemporary Netrunner Groups",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Voodoo Boys", "Netwatch", "Alt Cunningham", "Rache Bartmoss"],
+      "summary": "A detailed look at the main netrunner factions active in 2077 and their competing agendas."
+    },
+    {
+      "id": "shard_049",
+      "title": "Dogtown – Analytical Summary",
+      "category": "World",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": "Dogtown", "linked_gig": null },
+      "entities_mentioned": ["Kurt Hansen", "Barghest", "NUSA", "FIA"],
+      "summary": "An intelligence agency's strategic analysis of Dogtown's political situation and Barghest's control."
+    },
+    {
+      "id": "shard_050",
+      "title": "Accident or sabotage?",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Militech", "Night City Council"],
+      "summary": "An investigation into a suspicious industrial explosion, with corporate fingerprints everywhere."
+    },
+    {
+      "id": "shard_051",
+      "title": "75 Years of Cyberware, by Tsutomu Takahashi",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Tsutomu Takahashi", "Arasaka", "Militech", "Dynalar Technologies"],
+      "summary": "A retrospective on the history of cyberware from early military applications to mass consumer adoption."
+    },
+    {
+      "id": "shard_052",
+      "title": "Blaming Bartmoss - by 8ug8ear",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Rache Bartmoss", "8ug8ear", "Netwatch", "Alt Cunningham"],
+      "summary": "A contrarian take on Rache Bartmoss's legacy, arguing his DataKrash harmed netrunners more than corps."
+    },
+    {
+      "id": "shard_053",
+      "title": "Can cyberpsychosis be cured?",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Biotechnica", "Trauma Team", "MaxTac", "Regina Jones"],
+      "summary": "A medical journal article debating the treatability of cyberpsychosis versus NCPD's shoot-on-sight approach."
+    },
+    {
+      "id": "shard_054",
+      "title": "Cyberware Usage and Its Side Effects",
+      "category": "Technology",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Militech", "Ripperdocs", "Trauma Team"],
+      "summary": "A corporate-issued document listing official side effects of cyberware — heavily sanitised."
+    },
+    {
+      "id": "shard_055",
+      "title": "Binary Sigs vs Conspiracy Nuts",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Netwatch", "Voodoo Boys", "Rache Bartmoss"],
+      "summary": "An online debate between a netrunner collective and conspiracy theorists about the Net's architecture."
+    },
+    {
+      "id": "shard_056",
+      "title": "Beyond the Border of Empathy",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Biotechnica", "Trauma Team"],
+      "summary": "A psychological study on empathy loss in heavily augmented individuals."
+    },
+    {
+      "id": "shard_057",
+      "title": "Militech Datashard",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": "The Pickup" },
+      "entities_mentioned": ["Militech", "Meredith Stout"],
+      "summary": "An encrypted Militech datashard containing financial transaction records, obtained from Meredith Stout."
+    },
+    {
+      "id": "shard_058",
+      "title": "Diary (117-121/77)",
+      "category": "Encrypted",
+      "format": "Journal",
+      "is_encrypted": true,
+      "location": { "district": "City Center", "subzone": "Corpo Plaza", "linked_gig": null },
+      "entities_mentioned": ["Saburo Arasaka", "Yorinobu Arasaka", "Hanako Arasaka", "Arasaka"],
+      "summary": "The private diary of Saburo Arasaka, revealing his fears about Yorinobu's rebellion and legacy planning."
+    },
+    {
+      "id": "shard_059",
+      "title": "Operation Carpe Noctem",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "City Center", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "NUSA", "FIA"],
+      "summary": "Classified operational briefing for an Arasaka night-time infiltration mission."
+    },
+    {
+      "id": "shard_060",
+      "title": "PROJECT CONDIN SUSPENDED",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech", "NUSA"],
+      "summary": "An internal memo suspending a classified military development project with redacted reasons."
+    },
+    {
+      "id": "shard_061",
+      "title": "Company Expense Account, Hasan Demir",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "City Center", "subzone": "Corpo Plaza", "linked_gig": null },
+      "entities_mentioned": ["Hasan Demir", "Arasaka"],
+      "summary": "Encrypted financial records of an Arasaka executive showing suspicious off-book expenditures."
+    },
+    {
+      "id": "shard_062",
+      "title": "Destroy After Reading",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech", "NUSA"],
+      "summary": "A burn-on-read message involving a sensitive Militech operation. Contents barely decipherable."
+    },
+    {
+      "id": "shard_063",
+      "title": "Draft Report - Dock Distribution",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "Watson", "subzone": "Docks", "linked_gig": null },
+      "entities_mentioned": ["Night Corp", "NCPD"],
+      "summary": "An encrypted draft report on logistics operations at Watson docks, flagging irregularities."
+    },
+    {
+      "id": "shard_064",
+      "title": "Spellbook",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "Pacifica", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Voodoo Boys", "Netwatch"],
+      "summary": "An encrypted netrunner spellbook — collection of intrusion protocols from the Voodoo Boys."
+    },
+    {
+      "id": "shard_065",
+      "title": "Sayonara Station, by Luke Steelman",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Luke Steelman"],
+      "summary": "A melancholic sci-fi short story about a man waiting at a space station for someone who will never come."
+    },
+    {
+      "id": "shard_066",
+      "title": "Fanfiction: Johnny and the Shocking Truth",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Johnny Silverhand", "Alt Cunningham", "Samurai"],
+      "summary": "Fan-written fiction casting Johnny Silverhand in an absurd comedic adventure."
+    },
+    {
+      "id": "shard_067",
+      "title": "Kibble and Scop",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A bleak short story about food poverty and survival in Night City's lowest economic strata."
+    },
+    {
+      "id": "shard_068",
+      "title": "Dr. Havoc & Radon",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Dr. Havoc", "Radon"],
+      "summary": "A pulp comic-book style story featuring Night City's most eccentric fictional duo."
+    },
+    {
+      "id": "shard_069",
+      "title": "1,000 Beats a Second",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Samurai"],
+      "summary": "A short story told from the perspective of a concertgoer at a Samurai show in the 2020s."
+    },
+    {
+      "id": "shard_070",
+      "title": "Chrome Night Love",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A romantic short story set in Night City's underground about a merc and a ripperdoc."
+    },
+    {
+      "id": "shard_071",
+      "title": "Fanfiction: An Omelet of Passion",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Johnny Silverhand"],
+      "summary": "An intentionally absurd piece of Johnny Silverhand fan-written romance fiction."
+    },
+    {
+      "id": "shard_072",
+      "title": "\"Watson Whore\" Diary",
+      "category": "Literature",
+      "format": "Journal",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "The raw personal diary of a Watson resident working in the night economy, filled with dark humour."
+    },
+    {
+      "id": "shard_073",
+      "title": "\"Chrome and You\" - Excerpt from a novel by Anonymous",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A literary excerpt exploring the psychological relationship between a person and their cyberware."
+    },
+    {
+      "id": "shard_074",
+      "title": "In the Shade of an Apple Tree, by Virginia Granchester",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Virginia Granchester", "Aldecaldos"],
+      "summary": "A pastoral nomad story about a child growing up outside Night City's reach."
+    },
+    {
+      "id": "shard_075",
+      "title": "Corporate Wars: The Musical (shard)",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Militech", "Petrochem"],
+      "summary": "A satirical musical script lampooning the corporate wars through show-tune numbers."
+    },
+    {
+      "id": "shard_076",
+      "title": "WYSIWYG: What You Slot Is What You Got",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Ripperdocs"],
+      "summary": "A darkly comedic story about a man who gets terrible braindance software installed by a shady ripperdoc."
+    },
+    {
+      "id": "shard_077",
+      "title": "\"Samurai\" Thirty Years Later: Facts, Myths, and More Myths",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Johnny Silverhand", "Samurai", "Kerry Eurodyne", "Henry", "Denny"],
+      "summary": "A retrospective music journalism piece on Samurai's legacy and the myths around the band's breakup."
+    },
+    {
+      "id": "shard_078",
+      "title": "Big 5 Employers in Night City – 2077",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Militech", "Biotechnica", "Petrochem", "Night Corp"],
+      "summary": "Profiles of Night City's five biggest private sector employers and their key divisions."
+    },
+    {
+      "id": "shard_079",
+      "title": "A Family of Empire",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Saburo Arasaka", "Yorinobu Arasaka", "Hanako Arasaka", "Arasaka"],
+      "summary": "A profile of the Arasaka family dynasty, framed as a business journalism piece."
+    },
+    {
+      "id": "shard_080",
+      "title": "Arasaka and Ornithology: Three Japanese Words to Know",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Saburo Arasaka"],
+      "summary": "A cultural piece explaining the Japanese ornithological symbols central to Arasaka's corporate identity."
+    },
+    {
+      "id": "shard_081",
+      "title": "My grandpa was the King!",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A tabloid-style piece about a Night City resident who claims royal lineage and the media circus around it."
+    },
+    {
+      "id": "shard_082",
+      "title": "B.A. Guseinov, \"Respiration and Intercellular Spaces.\"",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["B.A. Guseinov", "Biotechnica"],
+      "summary": "A dry academic paper on bioengineering and its applications to cellular regeneration."
+    },
+    {
+      "id": "shard_083",
+      "title": "Biased guide on Dogtown - Night City's Wild West",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Pacifica", "subzone": "Dogtown", "linked_gig": null },
+      "entities_mentioned": ["Kurt Hansen", "Barghest", "NUSA", "FIA"],
+      "summary": "A deliberately one-sided tourist guide to Dogtown, ironically highlighting its lawlessness."
+    },
+    {
+      "id": "shard_084",
+      "title": "New Musical Front Making Waves",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Samurai", "Kerry Eurodyne", "Johnny Silverhand"],
+      "summary": "A music press article covering the current underground music scene's reaction to Samurai's legacy."
+    },
+    {
+      "id": "shard_085",
+      "title": "Archived Conversation",
+      "category": "World",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": null, "linked_gig": "Eye for an Eye" },
+      "entities_mentioned": ["Marlon Fuscino", "Tucker Albach"],
+      "summary": "Marlon Fuscino writes to a wealthy hit-and-run driver announcing he has hired a killer to avenge his daughter."
+    },
+    {
+      "id": "shard_086",
+      "title": "The Unofficial Diary of Lizzy Wizzy",
+      "category": "Articles",
+      "format": "Journal",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Lizzy Wizzy", "Liam Nolan"],
+      "summary": "Leaked diary entries from pop star Lizzy Wizzy, revealing the trauma behind her full chrome body conversion."
+    },
+    {
+      "id": "shard_087",
+      "title": "Access Point Operation Protocol – Izanagi",
+      "category": "Technology",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka", "Netwatch"],
+      "summary": "An Arasaka technical document detailing protocols for accessing the Izanagi network nodes."
+    },
+    {
+      "id": "shard_088",
+      "title": "Pain Editors and Mortality Rates",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech", "Trauma Team", "Biotechnica"],
+      "summary": "A medical study correlating pain editor cyberware usage with increased combat mortality rates."
+    },
+    {
+      "id": "shard_089",
+      "title": "Make it Go Boom!",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech"],
+      "summary": "An enthusiast's guide to explosive cyberware modifications, tongue-in-cheek but technically detailed."
+    },
+    {
+      "id": "shard_090",
+      "title": "Nomad cookbook from 2034",
+      "category": "Technology",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Aldecaldos", "Nomads"],
+      "summary": "A practical survival cookbook from the Badlands nomad era, with recipes using scavenged materials."
+    },
+    {
+      "id": "shard_091",
+      "title": "Chemicals: The Invisible Killer",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Petrochem", "Biotechnica"],
+      "summary": "A health advocacy article linking Petrochem's industrial operations to elevated cancer rates in Arroyo."
+    },
+    {
+      "id": "shard_092",
+      "title": "Death from Above: Mass Drivers as Weapons of Mass Destruction",
+      "category": "Technology",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Militech", "Arasaka", "NUSA"],
+      "summary": "A think-tank white paper on the proliferation of orbital weapons platforms after the Fourth Corporate War."
+    },
+    {
+      "id": "shard_093",
+      "title": "Kendachi - New Spring Catalogue",
+      "category": "Technology",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Kendachi"],
+      "summary": "A weapons manufacturer's product catalogue for their spring 2077 line of monoknife variants."
+    },
+    {
+      "id": "shard_094",
+      "title": "Akebono Arcade Collection",
+      "category": "Technology",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Akebono"],
+      "summary": "A digital catalogue for vintage arcade cabinet restoration parts and ROMs."
+    },
+    {
+      "id": "shard_095",
+      "title": "Avian Extermination Act",
+      "category": "World",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Night City Council", "NCPD"],
+      "summary": "Official legislative text of Night City's controversial act authorising mass culling of urban bird populations."
+    },
+    {
+      "id": "shard_096",
+      "title": "Dubai: Sand and Death",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Petrochem"],
+      "summary": "A war correspondent's report from post-collapse Dubai, where Petrochem's water wars left millions dead."
+    },
+    {
+      "id": "shard_097",
+      "title": "All Foods – The Future of Meat",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["All Foods", "Biotechnica"],
+      "summary": "A corporate puff piece on All Foods' synthetic protein programme, hiding their use of human biomass."
+    },
+    {
+      "id": "shard_098",
+      "title": "CHIBA 11",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka"],
+      "summary": "A travel/culture piece about Chiba district in Japan, presented as an Arasaka-branded destination guide."
+    },
+    {
+      "id": "shard_099",
+      "title": "Arvin Accord Redefined?",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["NUSA", "Militech", "Arasaka"],
+      "summary": "A policy analysis questioning whether the Arvin Accord still holds relevance in the post-war world order."
+    },
+    {
+      "id": "shard_100",
+      "title": "The Unofficial Diary of Lizzy Wizzy",
+      "category": "Articles",
+      "format": "Journal",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": null, "linked_gig": "Violence" },
+      "entities_mentioned": ["Lizzy Wizzy", "Liam Nolan", "Mr. Hands"],
+      "summary": "Leaked personal diary of pop icon Lizzy Wizzy. Documents her breakdown, murder of Liam Nolan, and chrome-ification."
+    },
+    {
+      "id": "shard_101",
+      "title": "Ad Astra - A magazine for stellar pioneers",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Night Corp", "Petrochem"],
+      "summary": "A utopian space colonisation magazine, jarringly optimistic in the context of Night City's brutality."
+    },
+    {
+      "id": "shard_102",
+      "title": "Mystical Rapture in Film",
+      "category": "World",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A film criticism piece analysing spiritual and transcendence themes in cyberpunk cinema."
+    },
+    {
+      "id": "shard_103",
+      "title": "Archived Conversation: Nasim Perlman and Aldo Schroder",
+      "category": "Cyberpsycho",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Badlands", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Nasim Perlman", "Aldo Schroder", "Militech"],
+      "summary": "Nasim and Aldo discuss the psychological effects of extended ghost-mode cyberware activation."
+    },
+    {
+      "id": "shard_104",
+      "title": "Crimeblock",
+      "category": "Literature",
+      "format": "Fiction",
+      "is_encrypted": false,
+      "location": { "district": "Heywood", "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["NCPD", "Night City Council"],
+      "summary": "A gritty crime novel excerpt set in Heywood, following a corrupt NCPD officer."
+    },
+    {
+      "id": "shard_105",
+      "title": "New United States of America Overview",
+      "category": "World",
+      "format": "Document",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["NUSA", "Militech", "President Myers"],
+      "summary": "An official NUSA government overview document outlining the political structure of the reformed United States."
+    },
+    {
+      "id": "shard_106",
+      "title": "Solomon Reed – FIA Dossier",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "Pacifica", "subzone": "Dogtown", "linked_gig": "Phantom Liberty" },
+      "entities_mentioned": ["Solomon Reed", "FIA", "President Myers", "NUSA"],
+      "summary": "A classified FIA personnel dossier on Solomon Reed, deep-cover operative in Dogtown."
+    },
+    {
+      "id": "shard_107",
+      "title": "Barghest Internal Communiqué",
+      "category": "Encrypted",
+      "format": "Document",
+      "is_encrypted": true,
+      "location": { "district": "Pacifica", "subzone": "Dogtown", "linked_gig": "Phantom Liberty" },
+      "entities_mentioned": ["Kurt Hansen", "Barghest", "Songbird"],
+      "summary": "A Barghest internal order mentioning surveillance of a high-value NUSA asset."
+    },
+    {
+      "id": "shard_108",
+      "title": "The Holy Qu'ran – SURA XVII. – The Night Journey",
+      "category": "Literature",
+      "format": "Literature",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": [],
+      "summary": "A digital copy of a Quranic surah, found in the game world — notable for its in-universe framing."
+    },
+    {
+      "id": "shard_109",
+      "title": "Supernova",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": "Westbrook", "subzone": null, "linked_gig": "Violence" },
+      "entities_mentioned": ["Lizzy Wizzy", "Liam Nolan"],
+      "summary": "A tabloid exposé on Lizzy Wizzy's rapid rise and the suspicious death of her manager Liam Nolan."
+    },
+    {
+      "id": "shard_110",
+      "title": "\"Bushidō\" and Neopostmodernism",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Arasaka"],
+      "summary": "A cultural theory essay examining how corporations like Arasaka weaponise Bushido aesthetics."
+    },
+    {
+      "id": "shard_111",
+      "title": "\"Liberum Arbitrium\" - REVIEW",
+      "category": "Articles",
+      "format": "Article",
+      "is_encrypted": false,
+      "location": { "district": null, "subzone": null, "linked_gig": null },
+      "entities_mentioned": ["Johnny Silverhand"],
+      "summary": "A literary review of a controversial novel inspired by Johnny Silverhand's life and philosophy."
+    },
+    {
+      "id": "shard_112",
+      "title": "Archived Conversation: Thomas Costigan and NCPD Sgt.",
+      "category": "World",
+      "format": "Conversation",
+      "is_encrypted": false,
+      "location": { "district": "Watson", "subzone": "Docks", "linked_gig": null },
+      "entities_mentioned": ["Thomas Costigan", "NCPD"],
+      "summary": "Thomas Costigan attempts to bribe an NCPD sergeant over a dock smuggling operation."
+    }
+  ]
+}

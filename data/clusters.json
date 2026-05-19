@@ -1,0 +1,150 @@
+{
+  "_meta": {
+    "description": "Thematic clusters derived from manual close-reading of CP2077 shard content. Each cluster groups shards sharing a dominant theme, with associated keywords, sub-themes, and emotional tone.",
+    "clustering_method": "manual_thematic_analysis",
+    "note": "A production version would use TF-IDF or sentence embeddings on full shard text. This dataset encodes the same analytical result via expert annotation."
+  },
+  "clusters": [
+    {
+      "id": "cluster_cyberpsychosis",
+      "label": "Cyberpsychosis & the cost of chrome",
+      "short": "Cyberpsychosis",
+      "description": "The slow erosion of humanity through excessive cyberware. Friends and colleagues watching someone they love become unrecognisable. The tension between augmentation as liberation and augmentation as destruction of self.",
+      "color": "#e05252",
+      "keywords": ["cyberpsychosis", "augmentation", "humanity", "dissociation", "chrome", "modification", "mental health", "combat", "breakdown", "psychosis"],
+      "emotional_tone": "grief",
+      "dominant_format": "Conversation",
+      "shard_ids": [
+        "shard_001","shard_002","shard_003","shard_004","shard_005","shard_006",
+        "shard_007","shard_008","shard_009","shard_010","shard_011","shard_013",
+        "shard_014","shard_015","shard_016","shard_017","shard_018","shard_019",
+        "shard_020","shard_021","shard_022","shard_023","shard_024","shard_025",
+        "shard_026","shard_027","shard_028","shard_029","shard_030","shard_031",
+        "shard_032","shard_033","shard_034","shard_035","shard_036","shard_037",
+        "shard_038","shard_039","shard_053","shard_056","shard_073"
+      ],
+      "sub_themes": [
+        { "id": "sub_witness",   "label": "Witnessing a loved one's collapse",   "shard_ids": ["shard_001","shard_002","shard_005","shard_025","shard_029","shard_030","shard_037","shard_038"] },
+        { "id": "sub_clinical",  "label": "Clinical / institutional perspective", "shard_ids": ["shard_004","shard_009","shard_013","shard_017","shard_023","shard_024","shard_034"] },
+        { "id": "sub_firsthand", "label": "First-person descent",                 "shard_ids": ["shard_014","shard_016","shard_019","shard_031","shard_033","shard_038"] },
+        { "id": "sub_military",  "label": "Military / corp-induced psychosis",    "shard_ids": ["shard_007","shard_015","shard_017","shard_019","shard_035","shard_103"] }
+      ]
+    },
+    {
+      "id": "cluster_corpo_power",
+      "label": "Corporate power & propaganda",
+      "short": "Corporate power",
+      "description": "The megacorporations as total institutions — producing culture, writing history, owning bodies. Corporate documents, puff pieces, and internal communications reveal the machinery of control.",
+      "color": "#e6a817",
+      "keywords": ["corporation", "Arasaka", "Militech", "power", "control", "propaganda", "employment", "war", "capital", "empire"],
+      "emotional_tone": "cold",
+      "dominant_format": "Article",
+      "shard_ids": [
+        "shard_041","shard_042","shard_043","shard_046","shard_050","shard_051",
+        "shard_054","shard_057","shard_058","shard_059","shard_060","shard_061",
+        "shard_062","shard_075","shard_078","shard_079","shard_080","shard_087",
+        "shard_092","shard_096","shard_098","shard_099","shard_110"
+      ],
+      "sub_themes": [
+        { "id": "sub_arasaka",   "label": "Arasaka: dynasty and identity",       "shard_ids": ["shard_042","shard_058","shard_079","shard_080","shard_098","shard_110"] },
+        { "id": "sub_warfare",   "label": "Corporate warfare and geopolitics",    "shard_ids": ["shard_041","shard_047","shard_092","shard_099"] },
+        { "id": "sub_secret",    "label": "Encrypted / classified documents",     "shard_ids": ["shard_057","shard_059","shard_060","shard_061","shard_062"] },
+        { "id": "sub_employer",  "label": "Corps as total employers",             "shard_ids": ["shard_043","shard_046","shard_054","shard_078"] }
+      ]
+    },
+    {
+      "id": "cluster_net_tech",
+      "label": "The Net & technology",
+      "short": "Net & Tech",
+      "description": "The architecture of the world — cyberware, the Net, the Blackwall, rogue AIs. Technical documents, polemics, and histories of the digital infrastructure that underlies Night City's reality.",
+      "color": "#67d4a8",
+      "keywords": ["netrunner", "Net", "Blackwall", "AI", "cyberware", "DataKrash", "Bartmoss", "Soulkiller", "hack", "protocol", "ICE"],
+      "emotional_tone": "curious",
+      "dominant_format": "Article",
+      "shard_ids": [
+        "shard_048","shard_051","shard_052","shard_054","shard_055","shard_056",
+        "shard_063","shard_064","shard_087","shard_088","shard_089","shard_091",
+        "shard_093","shard_094"
+      ],
+      "sub_themes": [
+        { "id": "sub_old_net",   "label": "Old Net, Bartmoss, DataKrash",        "shard_ids": ["shard_048","shard_052","shard_055"] },
+        { "id": "sub_cyberware", "label": "Cyberware tech and history",           "shard_ids": ["shard_051","shard_054","shard_088","shard_089"] },
+        { "id": "sub_covert",    "label": "Encrypted / covert operations",        "shard_ids": ["shard_063","shard_064","shard_087"] }
+      ]
+    },
+    {
+      "id": "cluster_street_life",
+      "label": "Street life & survival",
+      "short": "Street life",
+      "description": "Night City as lived experience from the bottom. Poverty, food, crime, small vengeances. The texture of everyday survival in the megabuildings and the Badlands.",
+      "color": "#b07af5",
+      "keywords": ["food", "poverty", "survival", "crime", "street", "gang", "Night City", "megabuilding", "scop", "kibble", "nomad"],
+      "emotional_tone": "raw",
+      "dominant_format": "Fiction",
+      "shard_ids": [
+        "shard_044","shard_045","shard_067","shard_072","shard_074","shard_076",
+        "shard_085","shard_090","shard_095","shard_097","shard_104","shard_112"
+      ],
+      "sub_themes": [
+        { "id": "sub_poverty",   "label": "Food, poverty, megabuildings",         "shard_ids": ["shard_067","shard_072","shard_097","shard_104"] },
+        { "id": "sub_nomad",     "label": "Nomad life outside the city",          "shard_ids": ["shard_044","shard_074","shard_090"] },
+        { "id": "sub_revenge",   "label": "Personal justice and revenge",         "shard_ids": ["shard_085","shard_112"] }
+      ]
+    },
+    {
+      "id": "cluster_identity",
+      "label": "Identity, body & humanity",
+      "short": "Identity",
+      "description": "What makes a person a person when the body is replaceable? The philosophical and emotional consequences of full-body modification, digital consciousness, and the blurring boundary between self and chrome.",
+      "color": "#7eb8f7",
+      "keywords": ["identity", "body", "human", "chrome", "self", "soul", "consciousness", "empathy", "modification", "what am I"],
+      "emotional_tone": "melancholic",
+      "dominant_format": "Journal",
+      "shard_ids": [
+        "shard_056","shard_065","shard_068","shard_070","shard_073","shard_086",
+        "shard_100","shard_102","shard_108"
+      ],
+      "sub_themes": [
+        { "id": "sub_chrome_self","label": "Chrome as identity transformation",   "shard_ids": ["shard_073","shard_086","shard_100"] },
+        { "id": "sub_literary",  "label": "Literary / philosophical treatment",   "shard_ids": ["shard_065","shard_068","shard_070","shard_102","shard_108"] }
+      ]
+    },
+    {
+      "id": "cluster_music_culture",
+      "label": "Music, celebrity & counterculture",
+      "short": "Music & culture",
+      "description": "Johnny Silverhand's legacy, Samurai's mythology, Lizzy Wizzy's breakdown. The ways Night City commodifies resistance and turns counterculture into product.",
+      "color": "#f78fb3",
+      "keywords": ["Samurai", "Johnny Silverhand", "music", "rockerboy", "celebrity", "culture", "fanfiction", "legacy", "resistance"],
+      "emotional_tone": "nostalgic",
+      "dominant_format": "Article",
+      "shard_ids": [
+        "shard_066","shard_069","shard_071","shard_077","shard_084","shard_086",
+        "shard_100","shard_109","shard_111"
+      ],
+      "sub_themes": [
+        { "id": "sub_samurai",   "label": "Samurai and Johnny's legacy",          "shard_ids": ["shard_066","shard_069","shard_071","shard_077","shard_084","shard_111"] },
+        { "id": "sub_lizzy",     "label": "Lizzy Wizzy: fame and fracture",       "shard_ids": ["shard_086","shard_100","shard_109"] }
+      ]
+    },
+    {
+      "id": "cluster_politics_war",
+      "label": "Geopolitics & the state",
+      "short": "Geopolitics",
+      "description": "The hollowed-out NUSA, the corporate wars that reshaped continents, Dogtown as a state-within-a-state. The question of whether governance is even possible in 2077.",
+      "color": "#f4a261",
+      "keywords": ["NUSA", "government", "war", "Dogtown", "FIA", "political", "state", "military", "Barghest", "sovereignty"],
+      "emotional_tone": "tense",
+      "dominant_format": "Document",
+      "shard_ids": [
+        "shard_041","shard_047","shard_049","shard_083","shard_092","shard_095",
+        "shard_096","shard_099","shard_105","shard_106","shard_107"
+      ],
+      "sub_themes": [
+        { "id": "sub_dogtown",   "label": "Dogtown and Barghest",                 "shard_ids": ["shard_049","shard_083","shard_106","shard_107"] },
+        { "id": "sub_nusa",      "label": "NUSA and the failing state",           "shard_ids": ["shard_041","shard_099","shard_105"] },
+        { "id": "sub_latam",     "label": "Latin America and proxy wars",         "shard_ids": ["shard_047","shard_096"] }
+      ]
+    }
+  ]
+}

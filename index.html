@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CP2077 — Shard Network</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+
+  <!-- Loading overlay -->
+  <div id="loading-overlay" aria-live="polite">
+    <p class="loading-label">Initialising shard network</p>
+    <div class="loading-bar" role="progressbar"></div>
+  </div>
+
+  <div class="global_container">
+
+    <div class="top_container">
+      <div class="top_logo_div">
+        <h1>Data Visions</h1>
+      </div>
+      <div class="top_title_div">
+        <h1>Shard Network Explorer</h1>
+      </div>
+      <div class="top_meta_div">
+        <p>Cyberpunk 2077 lore visualisation</p>
+      </div>
+    </div>
+
+    <div class="content_container">
+      <div class="app-shell">
+
+        <!-- ================================================================
+         View row — tabs plus right-side search and controls
+         ================================================================ -->
+    <nav class="view-row" id="view-row" role="navigation" aria-label="Switch visualisation view">
+      <div class="view-nav" id="view-nav">
+        <!-- Buttons injected here by ViewManager.renderNav() -->
+      </div>
+
+      <div class="view-actions">
+        <div class="search-wrap" role="search" id="search-wrap">
+          <svg class="search-icon" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
+            <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search entity, faction…"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Search entities"
+          />
+        </div>
+
+        <div id="toolbar-right">
+          <div class="stats-bar">
+            <span><span class="stat-value" id="stat-nodes">—</span></span>
+            <span><span class="stat-value" id="stat-links">—</span></span>
+            <span><span class="stat-value" id="stat-communities">—</span></span>
+          </div>
+          <button id="btn-view-all" type="button">VIEW ALL</button>
+          <button id="btn-reset" type="button">RESET</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================================================================
+         View container — each view mounts its DOM here
+         ================================================================ -->
+    <div id="view-container" role="main">
+      <!-- Active view content rendered here -->
+    </div>
+
+      </div><!-- /.app-shell -->
+    </div><!-- /.content_container -->
+
+    <div class="bottom_container">
+      <div class="bottom_credits_div">
+        <p>Built from Cyberpunk 2077 shard data — an experiment in narrative visualisation.</p>
+      </div>
+    </div>
+
+  </div><!-- /.global_container -->
+
+  <!-- ================================================================
+       Scripts — load order matters
+       ================================================================ -->
+
+  <!-- D3 v7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"
+          integrity="sha512-M7nHCiNUOwFt6Us3r8alutZLm9qMt4s9951uo8jqO4UwJ1hziseL6O3ndFyigx6+LREfZqnhHxYjKRJ8ZQ69DQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+
+  <!-- Core modules (order-dependent) -->
+  <script src="./src/ui/view-manager.js"></script>
+  <script src="./src/ui/ui-controller.js"></script>
+  <script src="./src/graph/graph-builder.js"></script>
+  <script src="./src/graph/graph-renderer.js"></script>
+
+  <!-- View handlers — each self-registers with ViewManager -->
+  <script src="./src/graph/view-network.js"></script>
+  <script src="./src/timeline/view-timeline.js"></script>
+  <script src="./src/clusters/view-clusters.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="./src/main.js"></script>
+
+  <!-- Per-view toolbar visibility management -->
+  <script>
+    /**
+     * Hide/show topbar elements depending on active view.
+     * Runs each time the view nav buttons are clicked.
+     */
+    document.getElementById("view-nav").addEventListener("click", (e) => {
+      const btn = e.target.closest(".view-btn");
+      if (!btn) return;
+      const viewId = btn.dataset.viewId;
+
+      const isNetwork = viewId === "network";
+
+      // Search is only relevant for the network view
+      document.getElementById("search-wrap").style.display  = isNetwork ? "" : "none";
+
+      // Stats bar + action buttons only for network
+      const statsBar = document.querySelector(".stats-bar");
+      const resetBtn = document.getElementById("btn-reset");
+      const viewAllBtn = document.getElementById("btn-view-all");
+      if (statsBar) statsBar.style.display = isNetwork ? "" : "none";
+      if (resetBtn) resetBtn.style.display  = isNetwork ? "" : "none";
+      if (viewAllBtn) viewAllBtn.style.display = isNetwork ? "" : "none";
+    });
+  </script>
+
+</body>
+</html>
