@@ -2,7 +2,11 @@
 
 I really enjoyed Cyberpunk 2077 for its rich world, hidden secrets, and the way the community documents lore. This project is a small exploration of what can be visualised when you start from data that is well documented and structured.
 
----
+## Author
+Matthieu GRALL, as part of the DATA VISIONS collective.
+
+## License
+[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.en).
 
 ## What this project does
 
@@ -14,7 +18,9 @@ The app turns curated Cyberpunk shard data into three complementary visual stori
 
 The aim is not to be an exhaustive game guide, but to show how rich lore and secret-filled documentation can become visual data.
 
----
+## Main data source
+
+Primary reference: **Cyberpunk Wiki (Fandom)** shard pages and related lore documentation. The dataset is enriched manually from publicly available player and community documentation.
 
 ## Architecture
 
@@ -31,8 +37,6 @@ The project is built with plain HTML, CSS and vanilla JavaScript, using D3 for S
 - `src/clusters/view-clusters.js` — theme cluster mindmap view
 - `data/` — source JSON datasets
 
----
-
 ## Features
 
 - zoomable, pannable network graph
@@ -40,14 +44,6 @@ The project is built with plain HTML, CSS and vanilla JavaScript, using D3 for S
 - detail panels linking back to source shards
 - timeline event exploration with category colouring
 - cluster drill-down by theme and sub-theme
-
----
-
-## Main data source
-
-Primary reference: **Cyberpunk Wiki (Fandom)** shard pages and related lore documentation. The dataset is enriched manually from publicly available player and community documentation.
-
----
 
 ## Running locally
 
@@ -58,8 +54,6 @@ Recommended options:
 - VS Code Live Server
 - `python -m http.server 8080`
 - `npx serve .`
-
----
 
 ## Conclusion
 
