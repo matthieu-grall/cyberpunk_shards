@@ -1,16 +1,27 @@
-# CP2077 — Shard Network
+# cyberpunk_shards
 
-I really enjoyed Cyberpunk 2077 for its rich world, hidden secrets, and the way the community documents lore. This project is a small exploration of what can be visualised when you start from data that is well documented and structured.
+I really enjoyed Cyberpunk 2077 for its rich world, hidden secrets, and the way the community documents lore. **This project is a small exploration of what can be visualised when you start from data that is well documented and structured**.
 
 ## Author
+
 Matthieu GRALL, as part of the DATA VISIONS collective.
 
 ## License
-[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.en).
+
+[![CC BY 4.0][cc-by-shield]][cc-by]
+
+Those documents are licensed under a 
+[Creative Commons Attribution 4.0 International License][cc-by].
+
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 ## What this project does
 
-The app turns curated Cyberpunk shard data into three complementary visual stories:
+**The app turns curated Cyberpunk shard data into three complementary visual stories**:
 
 - **Entity Network** — a graph of characters, corporations, gangs, institutions and their co-occurrences across shards.
 - **Lore Timeline** — a chronological view of events and stories drawn from shard sources.
@@ -20,7 +31,7 @@ The aim is not to be an exhaustive game guide, but to show how rich lore and sec
 
 ## Main data source
 
-Primary reference: **Cyberpunk Wiki (Fandom)** shard pages and related lore documentation. The dataset is enriched manually from publicly available player and community documentation.
+Primary reference: **Cyberpunk Wiki (Fandom)** "shard" pages and related lore documentation. The dataset is enriched manually from publicly available player and community documentation.
 
 ## Architecture
 
@@ -57,4 +68,4 @@ Recommended options:
 
 ## Conclusion
 
-This project shows that with rich, well-structured lore data, you can build meaningful visualisations that reveal narrative connections and hidden detail. The Cyberpunk world is full of secrets, and good data makes those secrets easier to explore.
+**This project shows that with rich, well-structured lore data, you can build meaningful visualisations that reveal narrative connections and hidden detail. The Cyberpunk world is full of secrets, and good data makes those secrets easier to explore**.
