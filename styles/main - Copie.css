@@ -63,8 +63,9 @@
 
 html, body {
   width: 100%; height: 100%;
-  margin: 0; padding: 0;
-  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
   background: #ffffff;
   color: #111111;
   font-family: var(--font-mono);
@@ -73,38 +74,28 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Subtle scanline overlay — zone de contenu uniquement */
-.content_container::after {
+body::after {
   content: "";
-  position: absolute; inset: 0;
-  pointer-events: none; z-index: 1;
+  position: fixed; inset: 0;
+  pointer-events: none; z-index: 9999;
   background: repeating-linear-gradient(
     to bottom, transparent, transparent 2px,
     rgba(0,0,0,0.02) 2px, rgba(0,0,0,0.02) 4px
   );
 }
 
-.content_container { position: relative; }
-
-::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border-muted); border-radius: 2px; }
-
-/* ==========================================================================
-   3. Global container + header + footer  (structure modèle DATA VISIONS)
-   ========================================================================== */
-
-/* Occupe exactement la hauteur de la fenêtre, sans débordement */
 .global_container {
-  height: 100vh;
+  margin: 10px;
+  min-height: calc(100vh - 20px);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   background-color: #ffffff;
+  font-family: 'Calibri Light', sans-serif;
   color: #111111;
+  border: 1px solid #111111;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 20px 40px rgba(0,0,0,0.08);
 }
 
-/* Header — hauteur fixe, trois colonnes */
 .top_container {
   flex: 0 0 60px;
   display: flex;
@@ -112,7 +103,7 @@ html, body {
   padding: 0 24px;
   background: #ffffff;
   border-bottom: 1px solid #111111;
-  font-family: 'Calibri Light', Calibri, sans-serif;
+  font-family: 'Calibri Light', sans-serif;
 }
 
 .top_logo_div {
@@ -120,15 +111,12 @@ html, body {
 }
 
 .top_logo_div h1 {
-  display: inline-block;
   margin: 0 10px;
-  padding: 4px 12px;
+  padding: 10px 12px;
   border: 2px solid #111111;
-  font-size: 1.1rem;
-  font-family: 'Calibri Light', Calibri, sans-serif;
-  font-weight: bold;
-  letter-spacing: normal;
-  text-transform: none;
+  font-size: 14px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .top_title_div {
@@ -138,77 +126,48 @@ html, body {
 
 .top_title_div h1 {
   margin: 0;
-  font-size: 1.2rem;
-  font-family: 'Calibri Light', Calibri, sans-serif;
-  font-weight: bold;
-  letter-spacing: normal;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
 }
 
-/* Drapeaux — modèle DATA VISIONS */
-.top_flags_div {
-  flex: 0 0 110px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
+.top_meta_div {
+  flex: 0 0 280px;
+  text-align: right;
 }
 
-.top_flags_div img {
-  width: 40px;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+.top_meta_div p {
+  margin: 0;
+  font-size: 12px;
+  color: #111111;
 }
 
-.top_flags_div img:hover,
-.top_flags_div .active img {
-  opacity: 1;
-}
-
-/* Footer — hauteur fixe, icônes licence contenues */
 .bottom_container {
-  flex: 0 0 30px;
+  flex: 0 0 28px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  border-top: 1px solid #111111;
   background: #ffffff;
-  font-family: 'Calibri Light', Calibri, sans-serif;
-  overflow: hidden;
+  border-top: 1px solid #111111;
+  font-family: 'Calibri Light', sans-serif;
 }
 
 .bottom_credits_div {
-  color: var(--text-secondary);
-  font-size: 0.75rem;
-  line-height: 1;
+  color: #111111;
+  font-size: 12px;
 }
 
-.bottom_credits_div p { margin: 0; }
-
-/* Icônes licence CC — taille fixe, alignées avec le texte */
-.license_icon {
-  height: 14px !important;
-  width: auto;
-  margin-left: 3px;
-  vertical-align: text-bottom;
+.bottom_credits_div p {
+  margin: 5px;
 }
 
-/* Content — tout l'espace restant, image de fond modèle */
-.content_container {
-  flex: 1 1 0;
-  min-height: 0;
-  overflow: hidden;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
-    url("../img/background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-muted); border-radius: 2px; }
 
 /* ==========================================================================
-   3b. App shell  (layout interne — inchangé)
+   3. App shell
    ========================================================================== */
 
 .app-shell {
@@ -219,8 +178,19 @@ html, body {
     "views";
   width: 100%; height: 100%;
   min-height: 0;
-  background: transparent;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   overflow: hidden;
+}
+
+.content_container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 16px;
+  background-color: #ffffff;
 }
 
 /* ==========================================================================
@@ -468,7 +438,7 @@ html, body {
 }
 
 #graph-canvas {
-  background: transparent;
+  background: #ffffff;
   overflow: hidden;
   cursor: grab;
   position: relative;
@@ -508,7 +478,7 @@ html, body {
 
 .timeline-wrap {
   width: 100%; height: 100%;
-  background: transparent;
+  background: #ffffff;
   overflow: hidden;
 }
 
@@ -521,7 +491,7 @@ html, body {
 
 .timeline-wrap {
   width: 100%; height: 100%;
-  background: transparent;
+  background: #ffffff;
   overflow: hidden;
   min-height: 0;
 }
@@ -633,7 +603,7 @@ html, body {
 .cl-canvas {
   flex: 1;
   width: 100%; height: 100%;
-  background: transparent;
+  background: #ffffff;
   overflow: hidden;
   cursor: default;
   min-height: 0;

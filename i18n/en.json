@@ -1,0 +1,19 @@
+{
+  "header": {
+    "logo": "Data Visions",
+    "title": "Shard Network Explorer"
+  },
+  "views": {
+    "network":  "Network of entities",
+    "timeline": "Chronology",
+    "clusters": "Thematic Clusters"
+  },
+  "footer": {
+    "license": "Site licensed under",
+    "cc": "CC BY 4.0",
+    "flags": "Flags by",
+    "flagsFrom": "from",
+    "background": "Background by",
+    "backgroundFrom": "from"
+  }
+}

@@ -1,27 +1,9 @@
 /**
- * main.js
- * -------
- * Application entry point for CP2077 Shard Network v2.
- *
- * Execution order:
- *   1. Fetch all four JSON datasets concurrently.
- *   2. Populate the shared DataStore.
- *   3. Render the view-switcher navigation.
- *   4. Mount the default view (network graph).
+ * main.js — CP2077 Shard Network v2
  */
 
 "use strict";
 
-// ---------------------------------------------------------------------------
-// Data loading
-// ---------------------------------------------------------------------------
-
-/**
- * Fetch all four data files in parallel.
- *
- * @returns {Promise<[object, object, object, object]>}
- *   [shardsJson, entitiesJson, timelineJson, clustersJson]
- */
 async function loadAllData() {
   const urls = [
     "./data/shards.json",
@@ -29,36 +11,19 @@ async function loadAllData() {
     "./data/timeline.json",
     "./data/clusters.json",
   ];
-
   const responses = await Promise.all(urls.map((u) => fetch(u)));
-
-  // Check all responses before parsing
   for (const [i, res] of responses.entries()) {
-    if (!res.ok) {
-      throw new Error(`Failed to fetch ${urls[i]}: HTTP ${res.status}`);
-    }
+    if (!res.ok) throw new Error(`Failed to fetch ${urls[i]}: HTTP ${res.status}`);
   }
-
   return Promise.all(responses.map((r) => r.json()));
 }
-
-// ---------------------------------------------------------------------------
-// Bootstrap
-// ---------------------------------------------------------------------------
 
 async function init() {
   const loadingEl = document.querySelector("#loading-overlay");
 
   try {
-    // -----------------------------------------------------------------------
-    // 1. Load all datasets
-    // -----------------------------------------------------------------------
-    const [shardsJson, entitiesJson, timelineJson, clustersJson] =
-      await loadAllData();
+    const [shardsJson, entitiesJson, timelineJson, clustersJson] = await loadAllData();
 
-    // -----------------------------------------------------------------------
-    // 2. Populate shared DataStore
-    // -----------------------------------------------------------------------
     ViewManager.DataStore.shards   = shardsJson.shards;
     ViewManager.DataStore.entities = entitiesJson.entities;
     ViewManager.DataStore.timeline = timelineJson;
@@ -71,19 +36,16 @@ async function init() {
       `${clustersJson.clusters.length} clusters`
     );
 
-    // -----------------------------------------------------------------------
-    // 3. Render navigation
-    // -----------------------------------------------------------------------
+    // Injecte les boutons d'onglets dans le DOM
     ViewManager.renderNav("#view-nav");
 
-    // -----------------------------------------------------------------------
-    // 4. Hide loading overlay
-    // -----------------------------------------------------------------------
+    // Traduit immédiatement les onglets dans la langue courante
+    document.dispatchEvent(new CustomEvent('languageChanged', {
+      detail: { language: I18n.getLanguage() }
+    }));
+
     loadingEl?.classList.add("hidden");
 
-    // -----------------------------------------------------------------------
-    // 5. Mount default view
-    // -----------------------------------------------------------------------
     ViewManager.switchTo("network");
 
   } catch (err) {
@@ -101,10 +63,6 @@ async function init() {
     }
   }
 }
-
-// ---------------------------------------------------------------------------
-// Entry
-// ---------------------------------------------------------------------------
 
 if (document.readyState === "loading") {
   document.addEventListener("DOMContentLoaded", init);

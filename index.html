@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CP2077 — Shard Network</title>
+  <title data-i18n="header.title">Shard Network Explorer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +16,7 @@
 </head>
 <body>
 
-  <!-- Loading overlay -->
+  <!-- Loading overlay — inchangé -->
   <div id="loading-overlay" aria-live="polite">
     <p class="loading-label">Initialising shard network</p>
     <div class="loading-bar" role="progressbar"></div>
@@ -24,78 +24,131 @@
 
   <div class="global_container">
 
-    <div class="top_container">
-      <div class="top_logo_div">
-        <h1>Data Visions</h1>
-      </div>
-      <div class="top_title_div">
-        <h1>Shard Network Explorer</h1>
-      </div>
-      <div class="top_meta_div">
-        <p>Cyberpunk 2077 lore visualisation</p>
-      </div>
-    </div>
+    <!-- ============================================================
+         HEADER — modèle DATA VISIONS
+         Trois colonnes : logo | titre | drapeaux
+    ============================================================ -->
+    <header class="top_container">
 
-    <div class="content_container">
+      <div class="top_logo_div">
+        <h1 data-i18n="header.logo">Data Visions</h1>
+      </div>
+
+      <div class="top_title_div">
+        <h1 data-i18n="header.title">Shard Network Explorer</h1>
+      </div>
+
+      <div class="top_flags_div">
+        <a href="#" class="language-toggle" data-lang="fr">
+          <img src="img/fr.png" alt="FR" title="Français">
+        </a>
+        <a href="#" class="language-toggle" data-lang="en">
+          <img src="img/en.png" alt="EN" title="English">
+        </a>
+      </div>
+
+    </header>
+
+    <!-- ============================================================
+         CONTENT — app-shell directement dans le <main>
+    ============================================================ -->
+    <main class="content_container">
+
       <div class="app-shell">
 
-        <!-- ================================================================
-         View row — tabs plus right-side search and controls
-         ================================================================ -->
-    <nav class="view-row" id="view-row" role="navigation" aria-label="Switch visualisation view">
-      <div class="view-nav" id="view-nav">
-        <!-- Buttons injected here by ViewManager.renderNav() -->
-      </div>
+        <!-- View row : onglets + recherche + contrôles -->
+        <nav class="view-row" id="view-row" role="navigation" aria-label="Switch visualisation view">
 
-      <div class="view-actions">
-        <div class="search-wrap" role="search" id="search-wrap">
-          <svg class="search-icon" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-            <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
-            <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-          <input
-            id="search-input"
-            type="search"
-            placeholder="Search entity, faction…"
-            autocomplete="off"
-            spellcheck="false"
-            aria-label="Search entities"
-          />
-        </div>
-
-        <div id="toolbar-right">
-          <div class="stats-bar">
-            <span><span class="stat-value" id="stat-nodes">—</span></span>
-            <span><span class="stat-value" id="stat-links">—</span></span>
-            <span><span class="stat-value" id="stat-communities">—</span></span>
+          <div class="view-nav" id="view-nav">
+            <!-- Buttons injected by ViewManager.renderNav()
+                 puis retraduits à chaque changement de langue via languageChanged -->
           </div>
-          <button id="btn-view-all" type="button">VIEW ALL</button>
-          <button id="btn-reset" type="button">RESET</button>
-        </div>
-      </div>
-    </nav>
 
-    <!-- ================================================================
-         View container — each view mounts its DOM here
-         ================================================================ -->
-    <div id="view-container" role="main">
-      <!-- Active view content rendered here -->
-    </div>
+          <div class="view-actions">
+            <div class="search-wrap" role="search" id="search-wrap">
+              <svg class="search-icon" width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <circle cx="6.5" cy="6.5" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <input
+                id="search-input"
+                type="search"
+                placeholder="Search entity, faction…"
+                autocomplete="off"
+                spellcheck="false"
+                aria-label="Search entities"
+              />
+            </div>
+
+            <div id="toolbar-right">
+              <div class="stats-bar">
+                <span><span class="stat-value" id="stat-nodes">—</span></span>
+                <span><span class="stat-value" id="stat-links">—</span></span>
+                <span><span class="stat-value" id="stat-communities">—</span></span>
+              </div>
+              <button id="btn-view-all" type="button">VIEW ALL</button>
+              <button id="btn-reset"    type="button">RESET</button>
+            </div>
+          </div>
+
+        </nav>
+
+        <!-- View container — chaque vue monte son DOM ici -->
+        <div id="view-container" role="main">
+          <!-- Active view content rendered here -->
+        </div>
 
       </div><!-- /.app-shell -->
-    </div><!-- /.content_container -->
 
-    <div class="bottom_container">
+    </main>
+
+    <!-- ============================================================
+         FOOTER — modèle DATA VISIONS
+    ============================================================ -->
+    <footer class="bottom_container">
       <div class="bottom_credits_div">
-        <p>Built from Cyberpunk 2077 shard data — an experiment in narrative visualisation.</p>
+        <p>
+          <span data-i18n="footer.project">Built from Cyberpunk 2077 shard data.</span>
+          |
+          <span data-i18n="footer.license">Site sous licence</span>
+          <a href="http://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank" rel="license noopener noreferrer">
+            <span data-i18n="footer.cc">CC BY 4.0</span>
+            <img class="license_icon" src="img/cc.svg" alt="CC">
+            <img class="license_icon" src="img/by.svg" alt="BY">
+          </a>
+          |
+          <span data-i18n="footer.flags">Drapeaux par</span>
+          <a href="https://www.vecteezy.com/members/jayali-667571954" target="_blank" rel="noopener noreferrer">Jawad Ali</a>
+          <span data-i18n="footer.flagsFrom">de</span>
+          <a href="https://www.vecteezy.com/" target="_blank" rel="noopener noreferrer">VECTEEZY</a>
+          |
+          <span data-i18n="footer.background">Fond par</span>
+          <a href="https://pixabay.com/fr/users/creativemagic-480360/" target="_blank" rel="noopener noreferrer">Magic Creative</a>
+          <span data-i18n="footer.backgroundFrom">de</span>
+          <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">PIXABAY</a>
+        </p>
       </div>
-    </div>
+    </footer>
 
   </div><!-- /.global_container -->
 
-  <!-- ================================================================
-       Scripts — load order matters
-       ================================================================ -->
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+
+  <!-- i18n — doit être chargé avant les autres scripts -->
+  <script src="./js/i18n.js"></script>
+
+  <!-- Traduction des onglets après injection par ViewManager -->
+  <script>
+    document.addEventListener('languageChanged', () => {
+      document.querySelectorAll('#view-nav .view-btn').forEach(btn => {
+        const key = 'views.' + btn.dataset.viewId;
+        const label = I18n.t(key);
+        if (label && label !== key) btn.textContent = label;
+      });
+    });
+  </script>
 
   <!-- D3 v7 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"
@@ -103,13 +156,13 @@
           crossorigin="anonymous"
           referrerpolicy="no-referrer"></script>
 
-  <!-- Core modules (order-dependent) -->
+  <!-- Core modules -->
   <script src="./src/ui/view-manager.js"></script>
   <script src="./src/ui/ui-controller.js"></script>
   <script src="./src/graph/graph-builder.js"></script>
   <script src="./src/graph/graph-renderer.js"></script>
 
-  <!-- View handlers — each self-registers with ViewManager -->
+  <!-- View handlers -->
   <script src="./src/graph/view-network.js"></script>
   <script src="./src/timeline/view-timeline.js"></script>
   <script src="./src/clusters/view-clusters.js"></script>
@@ -117,29 +170,19 @@
   <!-- Bootstrap -->
   <script src="./src/main.js"></script>
 
-  <!-- Per-view toolbar visibility management -->
+  <!-- Toolbar visibility par vue — inchangé -->
   <script>
-    /**
-     * Hide/show topbar elements depending on active view.
-     * Runs each time the view nav buttons are clicked.
-     */
     document.getElementById("view-nav").addEventListener("click", (e) => {
       const btn = e.target.closest(".view-btn");
       if (!btn) return;
-      const viewId = btn.dataset.viewId;
-
-      const isNetwork = viewId === "network";
-
-      // Search is only relevant for the network view
-      document.getElementById("search-wrap").style.display  = isNetwork ? "" : "none";
-
-      // Stats bar + action buttons only for network
-      const statsBar = document.querySelector(".stats-bar");
-      const resetBtn = document.getElementById("btn-reset");
+      const isNetwork = btn.dataset.viewId === "network";
+      document.getElementById("search-wrap").style.display = isNetwork ? "" : "none";
+      const statsBar   = document.querySelector(".stats-bar");
+      const resetBtn   = document.getElementById("btn-reset");
       const viewAllBtn = document.getElementById("btn-view-all");
-      if (statsBar) statsBar.style.display = isNetwork ? "" : "none";
-      if (resetBtn) resetBtn.style.display  = isNetwork ? "" : "none";
-      if (viewAllBtn) viewAllBtn.style.display = isNetwork ? "" : "none";
+      if (statsBar)   statsBar.style.display   = isNetwork ? "" : "none";
+      if (resetBtn)   resetBtn.style.display    = isNetwork ? "" : "none";
+      if (viewAllBtn) viewAllBtn.style.display  = isNetwork ? "" : "none";
     });
   </script>
 
