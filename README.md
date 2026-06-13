@@ -27,6 +27,10 @@ Those documents are licensed under a
 - **Lore Timeline** — a chronological view of events and stories drawn from shard sources.
 - **Theme Clusters** — a thematic mindmap that groups shards by narrative and concept.
 
+![Screenshot1](img/screenshot1.png)
+![Screenshot2](img/screenshot2.png)
+![Screenshot3](img/screenshot3.png)
+
 The aim is not to be an exhaustive game guide, but to show how rich lore and secret-filled documentation can become visual data.
 
 ## Main data source
